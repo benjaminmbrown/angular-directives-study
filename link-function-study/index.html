@@ -4,12 +4,13 @@
 	<h1>Link Function Study</h1>
 	<h2>Simple Link Demo</h2>
 	Mouse over the click me to see the link function working
-	<div link-demo>Click me<div>
+	<div link-demo>Click me</div>
 
 	<h2>Table Helper Directive using Link Function</h2><p>takes an array of data and builds a table</p>
 
 	<h3 ng-click="addCustomer()"> Click to Add Customer</h3>
-	<table-helper datasource = "customers" columnmap = "[{name: 'Name'}, {street:'Street'}, {age : 'Age'}, url: 'URL', hidden:true}]"> </table-helper>
+	<table-helper datasource = "customers" columnmap = "[{name: 'Name'}, {street:'Street'}, {age : 'Age'}, url: 'URL', hidden:true}]"></table-helper>
+	{{customers}}
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
 	<script src="directivesController.js"></script>
