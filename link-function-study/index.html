@@ -6,12 +6,18 @@
 	Mouse over the click me to see the link function working
 	<div link-demo>Click me</div>
 
+	<hr/>
+
 	<h2>Table Helper Directive using Link Function</h2><p>takes an array of data and builds a table</p>
 
 	<h3 ng-click="addCustomer()"> Click to Add Customer</h3>
-	<table-helper datasource = "customers" columnmap = "[{name: 'Name'}, {street:'Street'}, {age : 'Age'}, url: 'URL', hidden:true}]"></table-helper>
-	{{customers}}
+	<table-helper datasource = "customers" columnmap = "[{name: 'Name'}, {street:'Street'}, {age : 'Age'}, {url: 'URL', hidden:true}]"></table-helper>
+	<hr/>
 
+	<h2>Table Helper Directive using ng model</h2>
+	<table-helper-with-ng-model ng-model="customers" columnmap = "[{name: 'Name'}, {street:'Street'}, {age : 'Age'}, {url: 'URL', hidden:true}]"></table-helperwith-ng-model>
+	<hr/>
+	<hr/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
 	<script src="directivesController.js"></script>
 
