@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="delayBindModule">
+<body ng-controller ="CustomersController">
+	<h1>Delay Bind Directive</h1>
+	<p>This directive allows attribute values to be loaded when a specific action occurs (like mouseenter).
+	It is an example of caching a template in the compile function, then only loading it when some event happens in the link function(post compile, after pre-link). Watch console for more </p>
+	<ul>
+		<li ng-repeat = "cust in customers"
+			delay-bind = "{{::cust.street}}"
+			attribute = "title"
+			trigger = "mouseenter">
+
+			<a delay-bind="{{::cust.url}}"
+				attribute="href"
+				trigger="mouseenter">{{cust.name}}
+				</a>
+			
+
+			</li>
+
+	</ul>
+	<div> Total customers: {{::customers.length}}</div>
+	<hr/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
+	<script src="delayBindModule.js"></script>
+
+
+</body>
+</html>
