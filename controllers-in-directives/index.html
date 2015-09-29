@@ -1,0 +1,14 @@
+<!doctype html>
+<html ng-app="controllersDirectiveModule">
+<body ng-controller ="CustomersController">
+	<h1>Using a controller instead of link()</h1>
+	<p></p>
+<with-controller datasource="customers" add="addCustomer"></with-controller>
+	<hr/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
+
+	<script src="controllersDirectiveModule.js"></script>
+
+
+</body>
+</html>
