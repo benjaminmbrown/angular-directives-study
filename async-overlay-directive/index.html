@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="bbOverlayModule">
+<body>
+	<h1>Overlay directive </h1>
+	<ul>
+		<li>Accesses dom to show/hide overlay content</li>
+		<li>Displays overlay while any request is running</li>
+		<li>Hides overlay when response comes back</li>
+		<li>Watches any XHR requests & responses</li>
+	</ul>
+
+
+	<div bb-overlay bb-overlay-delay="300">
+		<br/><img src="/your/spinner.gif"/>Loading
+	</div>
+
+	<hr/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.11/angular.js"></script>
+	<script src="bbOverlayModule.js"></script>
+
+
+</body>
+</html>
